@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "394219904911",
+    "project_id": "annisa-qa",
+    "storage_bucket": "annisa-qa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394219904911:android:f96af008197c9a5079b5fa",
+        "android_client_info": {
+          "package_name": "com.nostracode.android.qa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqo-xJAeSeiAGTf0JJTaNr2fwqVrVkLww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

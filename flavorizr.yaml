@@ -1,0 +1,57 @@
+flavors:
+  prod:
+    app:
+      name: "AnnisaFlutter"
+      icon: "assets/icons/my_launcher_icon.png"
+    android:
+      applicationId: "com.nostracode.android"
+      icon: "assets/icons/my_launcher_icon.png"
+      firebase:
+        config: ".firebase/prod/google-services.json"
+    # ios:
+    #   bundleId: "com.nostracode.ios"
+    #   icon: "assets/icons/logo-prod.png"
+    #   # firebase:
+    #   #   config: ".firebase/prod/GoogleService-Info.plist"
+  stg:
+    app:
+      name: "AnnisaStg"
+      icon: "assets/icons/icon-stg.png"
+    android:
+      applicationId: "com.nostracode.android.stg"
+      icon: "assets/icons/icon-stg.png"
+      firebase:
+        config: ".firebase/stg/google-services.json"
+    # ios:
+    #   bundleId: "com.nostracode.ios.stg"
+    #   icon: "assets/icons/logo-stg.png"
+    #   # firebase:
+    #   #   config: ".firebase/stg/GoogleService-Info.plist"
+  dev:
+    app:
+      name: "AnnisaDev"
+      icon: "assets/icons/icon-dev.png"
+    android:
+      applicationId: "com.nostracode.android.dev"
+      icon: "assets/icons/icon-dev.png"
+      firebase:
+        config: ".firebase/dev/google-services.json"
+    # ios:
+    #   bundleId: "com.nostracode.ios.dev"
+    #   icon: "assets/icons/logo-dev.png"
+    #   # firebase:
+    #   #   config: ".firebase/dev/GoogleService-Info.plist"
+  qa:
+    app:
+      name: "AnnisaQA"
+      icon: "assets/icons/icon-qa.png"
+    android:
+      applicationId: "com.nostracode.android.qa"
+      icon: "assets/icons/icon-qa.png"
+      firebase:
+        config: ".firebase/qa/google-services.json"
+    # ios:
+    #   bundleId: "com.nostracode.ios.qa"
+    #   icon: "assets/icons/logo-dev.png"
+    #   # firebase:
+    #   #   config: ".firebase/dev/GoogleService-Info.plist"

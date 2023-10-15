@@ -1,16 +1,35 @@
-# annisa_flutter
+# NostraCode App Project
 
-A new Flutter project.
+Flutter project with 3 flavors (Development, Staging, Production)
 
-## Getting Started
+## 1. create flavors => dev, stg, prod<br/>
 
-This project is a starting point for a Flutter application.
+-> flutter pub run flutter_flavorizr<br/>
 
-A few resources to get you started if this is your first Flutter project:
+## 2. create launch.json file for multiple flavors<br/>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 3. splash logo<br/>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-> dart run flutter_native_splash:create --flavors dev,stg,prod<br/>
+
+then...setup iOS via XCode => https://pub.dev/packages/flutter_native_splash#ios-setup<br/>
+
+## 4. add multiple firebase project to flutter project<br/>
+
+-> firebase init<br/>
+choose "Don't set up a default project"<br/>
+
+-> firebase use --add<br/>
+add project and create alias for each project => dev, stg, prod<br/>
+
+example: "dev"<br/>
+-> firebase use dev<br/>
+-> flutter build web -t lib/main_dev.dart<br/>
+-> firebase serve<br/>
+-> firebase deploy --only hosting<br/>
+
+## 3. Flutterfire<br/>
+
+-> flutterfire configure -p nostracodedev -o lib/firebase_options_dev.dart -a com.nostracode.android.dev -i com.nostracode.ios.dev --no-apply-gradle-plugins --no-app-id-json<br/>
+-> flutterfire configure -p nostracodestg -o lib/firebase_options_stg.dart -a com.nostracode.android.stg -i com.nostracode.ios.stg --no-apply-gradle-plugins --no-app-id-json<br/>
+-> flutterfire configure -p nostracode -o lib/firebase_options_prod.dart -a com.nostracode.android -i com.nostracode.ios --no-apply-gradle-plugins --no-app-id-json<br/>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "814541279545",
+    "project_id": "annisa-flutter",
+    "storage_bucket": "annisa-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814541279545:android:93c26bd4a22ddb93d5d8e8",
+        "android_client_info": {
+          "package_name": "com.nostracode.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtNaSESmBQlTpGZGYRqnpghaZVTiiKv9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

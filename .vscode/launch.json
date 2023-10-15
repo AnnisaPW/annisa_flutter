@@ -1,0 +1,73 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "qa",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor",
+        "qa",
+        "-t",
+        "lib/_flavors/main_qa.dart"
+        // "lib/main_test.dart"
+      ]
+    },
+    {
+      "name": "dev",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor",
+        "dev",
+        "-t",
+        "lib/_flavors/main_dev.dart"
+        // "lib/main_dev.dart"
+      ]
+    },
+    {
+      "name": "stg",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor",
+        "stg",
+        "-t",
+        "lib/_flavors/main_stg.dart"
+        // "lib/main_stg.dart"
+      ]
+    },
+    {
+      "name": "prod",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--flavor",
+        "prod",
+        "-t",
+        "lib/_flavors/main_prod.dart"
+        // "lib/main_prod.dart"
+      ]
+    },
+    {
+      "name": "@debug",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "@profile",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "@release",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ]
+}

@@ -14,12 +14,104 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   url_launcher: ^6.1.14
+  flutter_native_splash: ^2.3.2
+  #* --- firebase ---
+  firebase_auth: ^4.6.1
+  firebase_app_check: ^0.1.4+2
+  firebase_analytics: ^10.4.0
+  firebase_messaging: ^14.6.0
+  firebase_in_app_messaging: ^0.7.3
+  firebase_database: ^10.2.0
+  cloud_firestore: ^4.8.0
+  firebase_storage: ^11.2.0
+  #*  --- firebase mock ---
+  # firebase_auth_mocks: ^0.11.0
+  firebase_storage_mocks: ^0.6.1
+  fake_cloud_firestore: ^2.4.1+1
+  firebase_core: ^2.15.1
+  google_sign_in: ^6.1.0
+  #*  --- state management ---
+  states_rebuilder: ^6.3.0
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.1
+  url_strategy: ^0.2.0
+  #*  --- rest api ---
+  http: ^1.1.0
+  dio: ^5.3.2
+  dio_log:
+    git:
+      url: https://github.com/flutterplugin/dio_log.git
+      ref: dependabot/pub/dio-5.0.3
+  # dio: ^4.0.4
+  # dio_log: ^2.0.4
+
+  #*  --- images ---
+  flutter_fadein: ^2.0.0
+  transparent_image: ^2.0.1
+  shimmer: ^3.0.0
+  image_picker: ^1.0.4
+  flutter_cache_manager: ^3.3.1
+  #*  --- tools ---
+  device_preview: ^1.1.0
+  validators: ^3.0.0
+  overlay_support: ^2.1.0
+  google_fonts: ^5.1.0
+  intl: ^0.18.1
+  connectivity_plus: ^4.0.2
+  english_words: ^4.0.0
+  uuid: ^4.0.0
+  logger: ^2.0.2
+  stack_trace: ^1.11.0
+  keyboard_dismisser: ^3.0.0
+  flutter_firebase_recaptcha: ^1.0.2
+  #* testing
+  # nostra_bdd_steps:
+  #   git:
+  #     url: https://gitlab.nostracode.com/nostracode-team/nostra_bdd_steps.git
+  #     ref: main
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  integration_test:
+    sdk: flutter
+  bdd_widget_test: ^1.6.0
+  build_runner: ^2.4.6
   flutter_lints: ^2.0.0
+  flutter_flavorizr: ^2.2.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/my_launcher_icon.png"
+  web:
+    generate: true
+    image_path: "assets/icons/my_launcher_icon.png"
+    background_color: "#FFFFFF"
+    theme_color: "#FFFFFF"
+  windows:
+    generate: true
+    image_path: "assets/icons/my_launcher_icon.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/my_launcher_icon.png"
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/env/
+    - assets/json/
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/
+    # - assets/icons-raw/
+  fonts:
+    - family: Newsreader
+      fonts:
+        - asset: assets/fonts/Newsreader-Regular.ttf
+        - asset: assets/fonts/Newsreader-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Newsreader-Bold.ttf
+          weight: 700

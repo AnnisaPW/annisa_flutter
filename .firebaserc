@@ -1,5 +1,10 @@
 {
   "projects": {
-    "default": "annisa-flutter"
-  }
+    "dev": "annisa-dev",
+    "qa": "annisa-qa",
+    "stg": "annisa-stg",
+    "prod": "annisa-flutter"
+  },
+  "targets": {},
+  "etags": {}
 }

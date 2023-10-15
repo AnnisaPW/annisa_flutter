@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "803655129966",
+    "project_id": "annisa-dev",
+    "storage_bucket": "annisa-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803655129966:android:2e59e17b796c6be02eff7f",
+        "android_client_info": {
+          "package_name": "com.nostracode.android.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqsjV2gFhGaMaBjqjQiX3jVBK7osu47qo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
