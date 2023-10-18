@@ -12,7 +12,20 @@
           "package_name": "com.nostracode.android"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "814541279545-fn053mt348qu3998adkhh04g1fng6l87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nostracode.android",
+            "certificate_hash": "fc19a6dd769a4cd602ffc4a8589888a706a257e8"
+          }
+        },
+        {
+          "client_id": "814541279545-uvqkjj6o1polao70vokslbrv3f66ntsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAtNaSESmBQlTpGZGYRqnpghaZVTiiKv9U"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814541279545-uvqkjj6o1polao70vokslbrv3f66ntsg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

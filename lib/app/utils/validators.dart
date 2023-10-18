@@ -3,6 +3,14 @@ part of '_index.dart';
 class Validate {
   Validate._();
 
+  static String? retypePassword(String? str) {
+    final pwd = Data.fbAuthRegist.st.rxPassword.value;
+    if (str != pwd) {
+      return "Password do not match";
+    }
+    return null;
+  }
+
   static String? clean(String str) {
     return sanitizers.trim(str);
   }

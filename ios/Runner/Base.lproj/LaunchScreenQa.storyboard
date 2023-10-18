@@ -41,7 +41,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchImageQa" width="512" height="512"/>
+        <image name="LaunchImageQa" width="405" height="405"/>
         <image name="LaunchBackgroundQa" width="1" height="1"/>
         <image name="BrandingImageQa" width="1" height="1"/>
     </resources>

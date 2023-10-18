@@ -5,7 +5,10 @@ class Routes {
 
   // static const root = '/';
   //* master -- ----- ----- ----- ----- -----
-  static const cobaSatu = '/';
+  static const cobaSatu = '/coba_satu';
   static const cobaDua = '/coba_dua';
   static const cobaTiga = '/coba_tiga';
+  static const fbAuthLogin = '/fb_auth_login';
+  static const fbAuthRegist = '/fb_auth_regist';
+  static const home = '/home';
 }

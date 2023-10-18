@@ -31,13 +31,18 @@ class Fun {
       str = e.message;
     } on FormatException catch (e) {
       str = e.message;
+    } on FirebaseException catch (e) {
+      if (e.code == 'invalid-credential') {
+        str = 'email address not registered. Try to register';
+      }
+      str = e.message ?? e.code;
     } on Exception {
       str = 'Unknown exception: ${obj.toString()}';
     } on Object {
       str = 'Something really unknown: ${obj.toString()}';
     }
-    logx.e(str);
     Dialogs.alert(str);
+    logx.e('handleException => $str');
   }
 
   static String dioErrorMessage(DioException e) {

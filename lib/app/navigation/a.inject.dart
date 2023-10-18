@@ -1,7 +1,7 @@
 part of '_index.dart';
 
 final nav = RM.injectNavigator(
-  initialLocation: Routes.cobaSatu,
+  initialLocation: Prov.auth.st.rxUser.st == null ? Routes.fbAuthLogin : Routes.home,
   routes: RouteMap.data,
   onNavigate: (data) => OnNavigate.action(data),
   onNavigateBack: (data) => OnNavigateBack.action(data),

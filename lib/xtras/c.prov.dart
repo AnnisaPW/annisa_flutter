@@ -2,7 +2,7 @@ part of '_index.dart';
 
 abstract class Prov {
   // static Injected<ConnProv> get conn => _connProv;
-  // static Injected<AuthProv> get auth => _authProv;
+  static Injected<AuthProv> get auth => _authProv;
   // static Injected<DummyProv> get dummy => _dummyProv;
   // static Injected<ProductProv> get product => _productProv;
   // static Injected<UserxProv> get userx => _userxProv;
@@ -11,7 +11,7 @@ abstract class Prov {
 }
 
 // final _connProv = RM2.inj(ConnProv());
-// final _authProv = RM2.inj(AuthProv());
+final _authProv = RM2.inj(AuthProv());
 // final _dummyProv = RM2.inj(DummyProv());
 // final _productProv = RM2.inj(ProductProv());
 // final _userxProv = RM2.inj(UserxProv());

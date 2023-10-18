@@ -1,14 +1,13 @@
 import 'dart:async';
-import 'package:flutter/material.dart';
-import 'package:annisa_flutter/app/_index.dart';
-
 import 'package:device_preview/device_preview.dart';
+import 'package:flutter/material.dart';
+
+import 'app/_index.dart';
 
 FutureOr<void> main() async {
-  // await inits();
   runApp(
     DevicePreview(
-      enabled: false,
+      enabled: PlatformType.isLinux,
       storage: DevicePreviewStorage.preferences(),
       builder: (context) => const App(), //* Wrap your app
     ),
