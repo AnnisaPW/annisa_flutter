@@ -3,7 +3,8 @@
     "dev": "annisa-dev",
     "qa": "annisa-qa",
     "stg": "annisa-stg",
-    "prod": "annisa-flutter"
+    "prod": "annisa-flutter",
+    "default": "annisa-flutter"
   },
   "targets": {},
   "etags": {}

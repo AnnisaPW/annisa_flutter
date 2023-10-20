@@ -5,10 +5,12 @@ class AuthProv {
     () => Stream.value(null),
     autoDisposeWhenNotUsed: false,
     sideEffects: SideEffects.onData(
-      (data) {
+      (data) async {
         logxx.wtf(AuthProv, 'user => $data');
-        Serv.auth.responseAuthState(data);
+        await Serv.auth.responseAuthState(data);
       },
     ),
   );
+
+  Timer? timer;
 }

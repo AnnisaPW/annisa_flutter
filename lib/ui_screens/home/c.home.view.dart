@@ -26,6 +26,19 @@ class HomeView extends StatelessWidget {
         preferredSize: Size.fromHeight(56),
         child: HomeAppbar(),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.notifications),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+          ),
+        ],
+      ),
       body: OnBuilder.all(
         listenTo: dt.rxUser,
         onWaiting: () => const Center(child: CircularProgressIndicator()),

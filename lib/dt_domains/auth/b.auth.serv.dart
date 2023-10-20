@@ -10,9 +10,11 @@ class AuthServ {
         );
   }
 
-  responseAuthState(User? user) {
+  responseAuthState(User? user) async {
     if (nav.routeData.location == '/fb_auth_login' || nav.routeData.location == '/fb_auth_regist') {
       if (user != null) {
+        // Fun.showOverlayLoading();
+        // await Future.delayed(2.seconds).then((value) => nav.back()).then((value) => nav.toReplacement(Routes.home));
         nav.toReplacement(Routes.home);
       }
     } else {
@@ -20,6 +22,16 @@ class AuthServ {
         nav.toAndRemoveUntil(Routes.fbAuthLogin);
       }
     }
+    // final location = nav.routeData.location;
+    // final isInitRoute = (location == Routes.fbAuthLogin) || (location == '/fb_auth_regist');
+    // if (!isInitRoute) {
+    //   nav.toAndRemoveUntil(Routes.fbAuthLogin);
+    // } else {
+    //   logxx.wtf(AuthServ, 'set timer');
+    //   pv.timer?.cancel();
+    //   pv.timer = Timer(3.seconds, () => nav.toReplacement(Routes.home));
+    //   // preventMultipleAsync(() => nav.toAndRemoveUntil(Routes.authSwitch));
+    // }
   }
 
   close() => pv.rxUser.subscription?.cancel();
