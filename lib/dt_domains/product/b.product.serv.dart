@@ -27,6 +27,7 @@ class ProductServ {
   }
 
   initProducts() {
+    pv.rxIsEnd.refresh();
     pv.rxProductList.refresh();
     pv.rxSelectedId.refresh();
 
