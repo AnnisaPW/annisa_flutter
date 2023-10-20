@@ -11,4 +11,8 @@ class Routes {
   static const fbAuthLogin = '/fb_auth_login';
   static const fbAuthRegist = '/fb_auth_regist';
   static const home = '/home';
+  static const productList = '/product_list';
+  static const productDetail = '/product_detail';
+  static const productInput = '/product_input';
+  static const productEdit = '/product_edit';
 }

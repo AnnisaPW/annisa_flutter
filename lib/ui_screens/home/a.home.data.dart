@@ -6,4 +6,6 @@ class HomeData {
   final rxInt = 0.inj();
 
   final rxUser = Prov.auth.st.rxUser;
+
+  // final rxCurrentIndex = 0.inj();
 }

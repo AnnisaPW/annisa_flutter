@@ -1,10 +1,10 @@
 part of '../_index.dart';
 
-class HomeCharlie extends StatelessWidget {
-  const HomeCharlie({Key? key}) : super(key: key);
+class ProductDetailCharlie extends StatelessWidget {
+  const ProductDetailCharlie({Key? key}) : super(key: key);
 
-  HomeCtrl get ct => Ctrl.home;
-  HomeData get dt => Data.home.st;
+  ProductDetailCtrl get ct => Ctrl.productDetail;
+  ProductDetailData get dt => Data.productDetail.st;
 
   @override
   Widget build(BuildContext context) {

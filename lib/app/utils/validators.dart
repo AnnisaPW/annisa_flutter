@@ -3,6 +3,13 @@ part of '_index.dart';
 class Validate {
   Validate._();
 
+  static String? isNotZero(String? str) {
+    if (str != null && str == '0') {
+      return "zero is not allowed";
+    }
+    return null;
+  }
+
   static String? retypePassword(String? str) {
     final pwd = Data.fbAuthRegist.st.rxPassword.value;
     if (str != pwd) {

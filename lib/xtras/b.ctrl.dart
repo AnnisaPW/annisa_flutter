@@ -7,4 +7,8 @@ abstract class Ctrl {
   static FbAuthLoginCtrl get fbAuthLogin => FbAuthLoginCtrl();
   static FbAuthRegistCtrl get fbAuthRegist => FbAuthRegistCtrl();
   static HomeCtrl get home => HomeCtrl();
+  static ProductListCtrl get productList => ProductListCtrl();
+  static ProductDetailCtrl get productDetail => ProductDetailCtrl();
+  static ProductInputCtrl get productInput => ProductInputCtrl();
+  static ProductEditCtrl get productEdit => ProductEditCtrl();
 }
