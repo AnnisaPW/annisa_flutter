@@ -1,7 +1,7 @@
 part of '../_index.dart';
 
-class HomeDrawerProfile extends StatelessWidget {
-  const HomeDrawerProfile({
+class HomeProfile extends StatelessWidget {
+  const HomeProfile({
     super.key,
   });
 
@@ -13,8 +13,13 @@ class HomeDrawerProfile extends StatelessWidget {
       onError: (_, __) => const Center(child: Text('Error')),
       onData: (data) => Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(height: 10),
+            const Text(
+              'Firebase Authentication',
+              textScaleFactor: 1.25,
+            ),
+            const SizedBox(height: 20),
             _dt.rxUser.st?.photoURL == null
                 ? const Text('No image')
                 : SizedBox(
@@ -25,7 +30,7 @@ class HomeDrawerProfile extends StatelessWidget {
                       backgroundImage: NetworkImage('${_dt.rxUser.st?.photoURL}'),
                     ),
                   ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             const Divider(thickness: 2),
             _dt.rxUser.st!.isAnonymous
                 ? const SizedBox.shrink()

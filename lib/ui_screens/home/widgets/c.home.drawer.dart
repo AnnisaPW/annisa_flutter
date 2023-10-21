@@ -20,7 +20,7 @@ class HomeDrawer extends StatelessWidget {
               ),
             ],
           ),
-          const HomeDrawerProfile(),
+          const HomeProfile(),
         ],
       ),
     );

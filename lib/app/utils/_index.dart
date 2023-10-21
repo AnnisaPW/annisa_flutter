@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:developer' as developer;
 import 'dart:io' as io;
 import 'dart:io';
+import 'dart:ui';
 
 import 'package:dio/dio.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -22,3 +23,4 @@ part 'functions.dart';
 part 'logx.dart';
 part 'platform_type.dart';
 part 'validators.dart';
+part 'scroll_behavior.dart';

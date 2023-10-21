@@ -10,25 +10,19 @@ class HomeView extends StatelessWidget {
         preferredSize: Size.fromHeight(56),
         child: HomeAppbar(),
       ),
+      drawerEnableOpenDragGesture: false,
       drawer: const HomeDrawer(),
-      body: ListView(
+      body: Row(
         children: [
-          Card(
-            child: ListTile(
-              title: const Text('Firebase'),
-              leading: CircleAvatar(
-                backgroundColor: Colors.white,
-                child: SizedBox(
-                  width: 25,
-                  height: 25,
-                  child: Image.asset('assets/images/firebase_logo.png'),
+          _ct.getQueryW(context) < 750
+              ? const SizedBox.shrink()
+              : Container(
+                  width: 300,
+                  height: double.infinity,
+                  color: Colors.black54.withOpacity(0.2),
+                  child: const HomeProfile(),
                 ),
-              ),
-              onTap: () {
-                nav.to(Routes.productList);
-              },
-            ),
-          ),
+          const HomeContent(),
         ],
       ),
     );

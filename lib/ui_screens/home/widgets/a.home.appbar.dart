@@ -10,6 +10,15 @@ class HomeAppbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       title: OnReactive(() => Text(dt.rxTitle.st)),
+      leading: _ct.getQueryW(context) < 750
+          ? IconButton(
+              tooltip: 'Profile',
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              icon: const Icon(Icons.menu),
+            )
+          : const SizedBox.shrink(),
     );
   }
 }

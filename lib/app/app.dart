@@ -26,6 +26,8 @@ class App extends TopStatelessWidget {
         routeInformationParser: nav.routeInformationParser,
         routerDelegate: nav.routerDelegate,
         //* device preview settings ----
+        scrollBehavior: AppScrollBehavior(),
+
         // locale: DevicePreview.locale(context),
         // useInheritedMediaQuery: true,
         // builder: (context, widget) {
