@@ -7,22 +7,8 @@ class HomeDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Drawer(
-      child: ListView(
-        children: [
-          Row(
-            children: [
-              IconButton(
-                onPressed: () {
-                  nav.back();
-                },
-                icon: const Icon(Icons.arrow_back_ios),
-              ),
-            ],
-          ),
-          const HomeProfile(),
-        ],
-      ),
+    return const Drawer(
+      child: HomeProfile(),
     );
   }
 }

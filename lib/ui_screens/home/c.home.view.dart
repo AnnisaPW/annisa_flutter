@@ -11,7 +11,9 @@ class HomeView extends StatelessWidget {
         child: HomeAppbar(),
       ),
       drawerEnableOpenDragGesture: false,
-      drawer: const HomeDrawer(),
+      drawer: const Drawer(
+        child: HomeProfile(),
+      ),
       body: Row(
         children: [
           _ct.getQueryW(context) < 750
@@ -20,6 +22,7 @@ class HomeView extends StatelessWidget {
                   width: 300,
                   height: double.infinity,
                   color: Colors.black54.withOpacity(0.2),
+                  // child: const HomeProfile(),
                   child: const HomeProfile(),
                 ),
           const HomeContent(),

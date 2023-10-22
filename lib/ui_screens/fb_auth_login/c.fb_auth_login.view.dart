@@ -26,7 +26,7 @@ class FbAuthLoginView extends StatelessWidget {
               children: [
                 Flexible(
                   child: Container(
-                    constraints: const BoxConstraints(maxWidth: 500),
+                    constraints: const BoxConstraints(maxWidth: 400),
                     child: OnFormBuilder(
                       listenTo: dt.rxForm,
                       builder: () {

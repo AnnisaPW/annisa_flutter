@@ -32,9 +32,9 @@ class Fun {
     } on FormatException catch (e) {
       str = e.message;
     } on FirebaseException catch (e) {
-      if (e.code == 'invalid-credential') {
-        str = 'email address not registered. Try to register';
-      }
+      // if (e.code == 'invalid-credential') {
+      //   str = 'email address not registered. Try to register';
+      // }
       str = e.message ?? e.code;
     } on Exception {
       str = 'Unknown exception: ${obj.toString()}';

@@ -24,24 +24,22 @@ class HomePageViewSlide extends StatelessWidget {
               hoverColor: const ColorScheme.dark().primary.withOpacity(0.2),
               child: Align(
                 alignment: Alignment.center,
-                child: SizedBox(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                        height: 80,
-                        child: Image.asset(_dt.items[index]["pages"][indexSlide]["image_asset"]),
-                      ),
-                      const SizedBoxH(10),
-                      Text(
-                        _dt.items[index]["pages"][indexSlide]["title"],
-                        textScaleFactor: 1.5,
-                      ),
-                      Text(
-                        _dt.items[index]["pages"][indexSlide]["subtitle"],
-                      ),
-                    ],
-                  ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      height: 80,
+                      child: Image.asset(_dt.items[index]["pages"][indexSlide]["image_asset"]),
+                    ),
+                    const SizedBoxH(10),
+                    Text(
+                      _dt.items[index]["pages"][indexSlide]["title"],
+                      textScaleFactor: 1.5,
+                    ),
+                    Text(
+                      _dt.items[index]["pages"][indexSlide]["subtitle"],
+                    ),
+                  ],
                 ),
               ),
             ),

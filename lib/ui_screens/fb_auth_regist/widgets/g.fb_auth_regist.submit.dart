@@ -15,8 +15,12 @@ class FbAuthRegistSubmit extends StatelessWidget {
           listenTo: dt.rxForm,
           onSubmitting: () => const CircularProgressIndicator(),
           child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              fixedSize: const Size.fromWidth(200),
+            ),
             onPressed: dt.rxForm.isDirty && dt.rxForm.isValid ? () => ct.submit() : null,
-            child: const Text('submit'),
+            child: const Text('Submit'),
           ),
         ),
       ),

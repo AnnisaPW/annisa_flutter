@@ -18,6 +18,7 @@ part 'widgets/f.home.cards.dart';
 part 'widgets/g.home.pageview.dart';
 part 'widgets/h.home.pageview_slide.dart';
 part 'widgets/i.home.pageview_indicator.dart';
+part 'widgets/z.home.coba.dart';
 
 HomeData get _dt => Data.home.st;
 HomeCtrl get _ct => Ctrl.home;

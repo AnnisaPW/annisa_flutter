@@ -8,10 +8,13 @@ class FbAuthLoginInfos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OnFormBuilder(
-      listenTo: dt.rxForm,
-      builder: () =>
-          dt.rxUser.st == null && dt.rxForm.isDirty ? const Text('you are not logged in yet') : const SizedBox.shrink(),
+    return Center(
+      child: OnFormBuilder(
+        listenTo: dt.rxForm,
+        builder: () => dt.rxUser.st == null && dt.rxForm.isDirty
+            ? const Text('you are not logged in yet')
+            : const SizedBox.shrink(),
+      ),
     );
   }
 }

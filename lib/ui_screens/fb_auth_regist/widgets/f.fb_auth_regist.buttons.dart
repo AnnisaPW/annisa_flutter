@@ -8,6 +8,7 @@ class FbAuthRegistButtons extends StatelessWidget {
     return Column(
       children: [
         const FbAuthRegistSubmit(),
+        const SizedBoxH(10),
         TextButton(
           onPressed: () {
             nav.toReplacement(Routes.fbAuthLogin);

@@ -43,13 +43,19 @@ class HomeCtrl {
   }
 
   Widget getUsername() {
-    Widget widget = const Text('Anonymous');
+    Widget widget = const Text(
+      'Anonymous',
+      textAlign: TextAlign.center,
+    );
     var user = dt.rxUser.st;
     if (user != null) {
       if (user.isAnonymous) {
-        const Text('Anonymous');
+        const Text(
+          'Anonymous',
+          textAlign: TextAlign.center,
+        );
       } else {
-        widget = Text('${dt.rxUser.st?.displayName}');
+        widget = Text('${dt.rxUser.st?.displayName}', textAlign: TextAlign.center);
       }
     }
     return widget;

@@ -17,11 +17,20 @@ class HomeCards extends StatelessWidget {
             children: [
               ...List.generate(
                 _dt.items.length,
-                (index) => Card(
-                  elevation: 2,
-                  child: Container(
+                (index) => OnReactive(
+                  () => Container(
                     width: 400,
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(50)),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        width: 2,
+                        color: _dt.items[index]["pg_tools"]["active_page"].state !=
+                                _dt.items[index]["pg_tools"]["controller"].initialPage
+                            ? Theme.of(context).colorScheme.primary
+                            // ? Colors.purple
+                            : Colors.grey.withOpacity(0.2),
+                      ),
+                    ),
                     height: 250,
                     child: Padding(
                       padding: const EdgeInsets.all(8),

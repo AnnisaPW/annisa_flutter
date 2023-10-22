@@ -12,8 +12,13 @@ class FbAuthLoginButtons extends StatelessWidget {
       () => Column(
         children: [
           const FbAuthLoginSubmit(),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
+          const SizedBoxH(10),
+          const Divider(
+            thickness: 2,
+          ),
+          const SizedBoxH(10),
+          OutlinedButton(
+            style: OutlinedButton.styleFrom(
               fixedSize: const Size.fromWidth(200),
             ),
             onPressed: () {
@@ -29,20 +34,21 @@ class FbAuthLoginButtons extends StatelessWidget {
                     child: Image.asset('assets/images/g-logo.png'),
                   ),
                   const SizedBox(width: 10),
-                  const Text('Sign in with google'),
+                  const Text('Sign in with Google'),
                 ],
               ),
             ),
           ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
+          OutlinedButton(
+            style: OutlinedButton.styleFrom(
               fixedSize: const Size.fromWidth(200),
             ),
             onPressed: () {
               ct.signInAnonymously();
             },
-            child: const Text('Sign in anonymously'),
+            child: const Text('Sign in Anonymously'),
           ),
+          const SizedBoxH(20),
           TextButton(
             onPressed: () {
               nav.toReplacement(Routes.fbAuthRegist);
