@@ -12,7 +12,7 @@ part 'c.home.view.dart';
 part 'widgets/a.home.appbar.dart';
 part 'widgets/b.home.fab.dart';
 part 'widgets/c.home.drawer.dart';
-part 'widgets/d.home.drawer_profile.dart';
+part 'widgets/d.home.profile.dart';
 part 'widgets/e.home.content.dart';
 part 'widgets/f.home.cards.dart';
 part 'widgets/g.home.pageview.dart';

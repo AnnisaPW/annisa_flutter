@@ -30,19 +30,22 @@ class FbAuthLoginView extends StatelessWidget {
                     child: OnFormBuilder(
                       listenTo: dt.rxForm,
                       builder: () {
-                        return const Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            SizedBox(height: 5),
-                            FbAuthLoginEmail(),
-                            SizedBox(height: 10),
-                            FbAuthLoginPassword(),
-                            SizedBox(height: 10),
-                            FbAuthLoginInfos(),
-                            SizedBox(height: 10),
-                            FbAuthLoginButtons(),
-                          ],
+                        return const Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              SizedBox(height: 5),
+                              FbAuthLoginEmail(),
+                              SizedBox(height: 10),
+                              FbAuthLoginPassword(),
+                              SizedBox(height: 10),
+                              FbAuthLoginInfos(),
+                              SizedBox(height: 10),
+                              FbAuthLoginButtons(),
+                            ],
+                          ),
                         );
                       },
                     ),
