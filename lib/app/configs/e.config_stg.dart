@@ -12,4 +12,10 @@ class FConfigStg implements FConfig {
 
   @override
   IPersistStore get store => StoreHive();
+
+  @override
+  String get apiTMDB => 'https://api.themoviedb.org';
+
+  @override
+  String get tokenTMDB => 'a603bb398cc5d799ec8d03ff2c95b7f4';
 }

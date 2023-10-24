@@ -12,4 +12,10 @@ class FConfigQA implements FConfig {
 
   @override
   IPersistStore get store => StoreFake();
+
+  @override
+  String get apiTMDB => '';
+
+  @override
+  String get tokenTMDB => '';
 }

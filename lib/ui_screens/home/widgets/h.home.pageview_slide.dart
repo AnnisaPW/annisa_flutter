@@ -14,36 +14,27 @@ class HomePageViewSlide extends StatelessWidget {
   Widget build(BuildContext context) {
     return OnReactive(() => Stack(
           children: [
-            InkWell(
-              onTap: _dt.items[index]["pg_tools"]["active_page"].state !=
-                      _dt.items[index]["pg_tools"]["controller"].initialPage
-                  ? () {
-                      nav.to(_dt.items[index]["pages"][indexSlide]["nav"]);
-                    }
-                  : null,
-              hoverColor: const ColorScheme.dark().primary.withOpacity(0.2),
-              child: Align(
-                alignment: Alignment.center,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      height: 80,
-                      child: Image.asset(_dt.items[index]["pages"][indexSlide]["image_asset"]),
-                    ),
-                    const SizedBoxH(10),
-                    Text(
-                      _dt.items[index]["pages"][indexSlide]["title"],
-                      textScaleFactor: 1.5,
-                    ),
-                    Text(
-                      _dt.items[index]["pages"][indexSlide]["subtitle"],
-                    ),
-                  ],
-                ),
+            Align(
+              alignment: Alignment.center,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: 80,
+                    child: Image.asset(_ct.imageAsset(index, indexSlide)),
+                  ),
+                  const SizedBoxH(10),
+                  Text(
+                    _dt.items[index]["pages"][indexSlide]["title"],
+                    textScaleFactor: 1.5,
+                  ),
+                  Text(
+                    _dt.items[index]["pages"][indexSlide]["subtitle"],
+                  ),
+                ],
               ),
             ),
-            _dt.items[index]["pg_tools"]["active_page"].state != _dt.items[index]["pg_tools"]["count_page"] - 1
+            _ct.activePage(index) != _ct.countPage(index) - 1
                 ? Align(
                     alignment: Alignment.centerRight,
                     child: IconButton(
@@ -54,7 +45,7 @@ class HomePageViewSlide extends StatelessWidget {
                     ),
                   )
                 : const SizedBox.shrink(),
-            _dt.items[index]["pg_tools"]["active_page"].state != _dt.items[index]["pg_tools"]["controller"].initialPage
+            _ct.activePage(index) != _ct.initialPage(index)
                 ? Align(
                     alignment: Alignment.centerLeft,
                     child: IconButton(

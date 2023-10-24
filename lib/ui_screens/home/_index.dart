@@ -1,7 +1,10 @@
 import 'package:annisa_flutter/ui_widgets/spaces/_index.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:page_view_dot_indicator/page_view_dot_indicator.dart';
 import 'package:states_rebuilder/states_rebuilder.dart';
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html' as html;
 
 import '../../app/_index.dart';
 import '../../xtras/_index.dart';

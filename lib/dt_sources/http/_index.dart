@@ -1,0 +1,7 @@
+import 'package:annisa_flutter/xtras/_index.dart';
+import 'package:dio/dio.dart';
+import 'package:dio_log/dio_log.dart';
+
+import '../../app/_index.dart';
+
+part 'http.dio.dart';

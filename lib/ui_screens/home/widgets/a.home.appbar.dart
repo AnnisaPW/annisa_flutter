@@ -19,6 +19,23 @@ class HomeAppbar extends StatelessWidget {
               icon: const Icon(Icons.menu),
             )
           : const SizedBox.shrink(),
+      actions: [
+        OutlinedButton(
+          onPressed: () {
+            html.window.open('https://github.com/AnnisaPW/annisa_flutter', 'GitHub');
+          },
+          child: Row(
+            children: [
+              SizedBox(
+                height: 50,
+                width: 50,
+                child: Image.asset('assets/images/github_logo.png'),
+              ),
+              const Text('GitHub'),
+            ],
+          ),
+        )
+      ],
     );
   }
 }

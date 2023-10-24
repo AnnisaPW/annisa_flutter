@@ -5,4 +5,6 @@ abstract class FConfig {
   String get name;
   String get title;
   IPersistStore get store;
+  String get apiTMDB;
+  String get tokenTMDB;
 }

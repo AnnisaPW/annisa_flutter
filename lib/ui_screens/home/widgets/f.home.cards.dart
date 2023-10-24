@@ -24,17 +24,28 @@ class HomeCards extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       border: Border.all(
                         width: 2,
-                        color: _dt.items[index]["pg_tools"]["active_page"].state !=
-                                _dt.items[index]["pg_tools"]["controller"].initialPage
+                        color: _ct.activePage(index) != _ct.initialPage(index)
                             ? Theme.of(context).colorScheme.primary
-                            // ? Colors.purple
                             : Colors.grey.withOpacity(0.2),
                       ),
                     ),
                     height: 250,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8),
-                      child: HomePageView(index: index),
+                    child: OnReactive(
+                      () => InkWell(
+                        borderRadius: BorderRadius.circular(20),
+                        onTap: _ct.activePage(index) != _ct.initialPage(index)
+                            ? () {
+                                for (var p in _dt.items[index]["pages"]) {
+                                  nav.to(p["nav"]);
+                                }
+                              }
+                            : null,
+                        hoverColor: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8),
+                          child: HomePageView(index: index),
+                        ),
+                      ),
                     ),
                   ),
                 ),

@@ -14,15 +14,18 @@ class HomePageView extends StatelessWidget {
         children: [
           Expanded(
             child: PageView(
-              controller: _dt.items[index]["pg_tools"]["controller"],
+              controller: _ct.pageController(index),
               scrollDirection: Axis.horizontal,
               onPageChanged: (page) {
-                _dt.items[index]["pg_tools"]["active_page"].setState((s) => page);
+                _ct.rxActivePage(index).setState((s) => page);
               },
               children: [
                 ...List.generate(
-                  _dt.items[index]["pg_tools"]["count_page"],
-                  (i) => HomePageViewSlide(index: index, indexSlide: i),
+                  _ct.countPage(index),
+                  (i) => HomePageViewSlide(
+                    index: index,
+                    indexSlide: i,
+                  ),
                 ),
               ],
             ),
